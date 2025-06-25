@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from utils.model_loader import load_keypoint_classifier, load_point_history_classifier
+
+keypoint_classifier, keypoint_labels = load_keypoint_classifier()
+point_history_classifier, point_labels = load_point_history_classifier()
+
+
 import csv
 import copy
 import argparse
